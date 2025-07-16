@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Scanner - How I Built It</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1 class="logo">🔐 XSS Scanner - Full Project Guide</h1>
+    <nav><a href="index.html">← Back to Portfolio</a></nav>
+  </div>
+</header>
+
+<section class="project-detail">
+  <div class="container">
+    <h2>🛠️ How I Built the XSS Scanner</h2>
+
+    <h3>📌 Objective</h3>
+    <p>To create an ethical tool that scans websites for <strong>reflected XSS vulnerabilities</strong> using Python and Flask.</p>
+
+    <h3>🧰 Tools Used</h3>
+    <ul>
+      <li>Python (requests, Flask)</li>
+      <li>HTML + Bootstrap (for frontend)</li>
+      <li>Pandas + ReportLab (for report export)</li>
+    </ul>
+
+    <h3>⚙️ Steps Involved</h3>
+    <ol>
+      <li>Created a Flask web app with a form to enter URL</li>
+      <li>Injected XSS payloads into the URL</li>
+      <li>Captured reflected responses using regex</li>
+      <li>Logged vulnerable URLs and results</li>
+      <li>Displayed results on a styled dashboard</li>
+      <li>Added export to CSV and PDF functionality</li>
+    </ol>
+
+    <h3>📸 Screenshot</h3>
+    <img src="img/xss-ui.png" alt="XSS Scanner Screenshot" class="screenshot"/>
+
+    <h3>🔗 GitHub Repo</h3>
+    <p><a href="https://github.com/yourusername/xss-scanner" class="btn" target="_blank">View Code on GitHub</a></p>
+
+    <a href="index.html" class="btn">← Back to Home</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Haseena</p>
+</footer>
+
+</body>
+</html>
