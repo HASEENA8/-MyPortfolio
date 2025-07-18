@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Scanner - Full Project Guide</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-detail {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .project-detail h2 {
+      color: #0d47a1;
+    }
+
+    .project-detail ul,
+    .project-detail ol {
+      padding-left: 1.25rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #0d47a1;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d47a1;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: white;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><i class="fas fa-shield-alt"></i> XSS Scanner - Full Project Guide</h1>
+  <nav>
+    <a href="../index.html">← Home</a>
+    <a href="./portfolio-website.html">Portfolio</a>
+    <a href="./xss-scanner.html">XSS Scanner</a>
+    <a href="./rainfall-prediction.html">Rainfall ML</a>
+    <a href="./steganography-tool.html">Steganography</a>
+  </nav>
+</header>
+
+<section class="project-detail">
+  <div class="container">
+    <h2>🛠️ How I Built the XSS Scanner</h2>
+
+    <h3>📌 Objective</h3>
+    <p>To create an ethical tool that scans websites for <strong>reflected XSS vulnerabilities</strong> using Python and Flask.</p>
+
+    <h3>🧰 Tools Used</h3>
+    <ul>
+      <li>Python (requests, Flask)</li>
+      <li>HTML + Bootstrap (for frontend)</li>
+      <li>Pandas + ReportLab (for report export)</li>
+    </ul>
+
+    <h3>⚙️ Steps Involved</h3>
+    <ol>
+      <li>Created a Flask web app with a form to enter URL</li>
+      <li>Injected XSS payloads into the URL</li>
+      <li>Captured reflected responses using regex</li>
+      <li>Logged vulnerable URLs and results</li>
+      <li>Displayed results on a styled dashboard</li>
+      <li>Added export to CSV and PDF functionality</li>
+    </ol>
+
+    <h3>📸 Screenshot</h3>
+    <img src="./images/Scanner2.png" alt="XSS Scanner Screenshot" class="screenshot"/>
+    <img src="./images/Scanner3.png" alt="XSS Scanner Screenshot" class="screenshot"/>
+
+    <h3>🔗 GitHub Repo</h3>
+    <p><a href="https://github.com/yourusername/xss-scanner" class="btn" target="_blank">View Code on GitHub</a></p>
+
+    <a href="../index.html" class="btn">← Back to Home</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Haseena | Follow me on 
+    <a href="#"><i class="fab fa-instagram"></i></a> 
+    <a href="#"><i class="fab fa-github"></i></a>
+  </p>
+</footer>
+
+</body>
+</html>
